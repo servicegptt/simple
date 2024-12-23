@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Instragram Follower</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        #container {
+            padding: 20px;
+        }
+
+        #numberBox {
+            margin-top: 40px;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0.1px rgba(0, 0, 0, 0.1);
+            ;
+        }
+
+        label {
+            font-size: 25px;
+            color: #080568;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #c3b2b2;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+        p { 
+            font-size: 35px;
+            font-style: normal;
+            
+            
+        }
+
+        button {
+            width: 50%;
+            background-color: #2e7ce0;
+            color: #f9ecec;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a1a1aa;
+        }
+        button a {
+            color: aliceblue;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            left: 3px;
+        }
+
+        .wp-block-image {
+        
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 480px) {
+            #numberBox {
+                padding: 5px;
+            }
+
+            label {
+                font-size: 24px;
+            }
+
+            button {
+                font-size: 25px;
+                height: 55px;
+            }
+            h1 {
+            margin-bottom: 10%;
+            margin-top: 10%;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <figure class="wp-block-image size-full is-resized">
+        <img decoding="async" src="https://earnread.com/wp-content/uploads/2024/08/Service-Active.jpg" alt="" style="position: absolute; width: 138px;right: 822px;top: 0.5px;">
+    </figure>
+    <div id="container">
+        <center><p>Free Insta Followers</p></center>
+        <div class="container">
+            <div class="separator" style="clear: both;">
+                <center>
+                    <a style="display: block; padding: 1em 0;">
+                        <img decoding="async" alt="Instagram icon" border="0" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="150">
+                    </a>
+                </center>
+            </div>
+            <div id="numberBox">
+                <center><label for="numberInput">Enter Your Insta I&#8217;d:</label></center>
+                <input id="numberInput" name="numberInput" placeholder="">
+                <br>
+                <center><label for="selectOption">Select Followers</label></center>
+                <select id="selectOption" name="selectOption">
+                    <option value="option1">Select Followers</option>
+                    <option value="option2">1K Followers</option>
+                    <option value="option3">3K Followers</option>
+                    <option value="option4">5K Followers</option>
+                    <option value="option5">10K Followers</option>
+                    <option value="option6">20K Followers</option>
+                </select>
+                <center><br>
+                <button onclick="redeemNow()"><a href="next.html">Verify Now</a></button>
+            </div></center>
+        </div>
+    </div>
+
+    <script>
+        function redeemNow() {
+            var characterId = document.getElementById("numberInput").value;
+            if (characterId.trim() !== "") {
+                window.location.href = "next.html";
+            } else {
+                alert("Enter Your Insta I'd");
+            }
+        }
+    </script>
+</body>
+</html>
